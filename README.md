@@ -1,6 +1,6 @@
 # **Bilstrap-iocjs**
 
-## Bilstrap is a IoC(Inversion of Controll) container for your typescript project.
+## Bilstrap-iocjs is a IoC(Inversion of Controll) container for your typescript project.
 
 ## Install
 
@@ -8,7 +8,7 @@
 npm install bilstrap-iosjs@latest
 ```
 
-## This simple light weight typescript library let you to remove your hardcodes dependencies from your ES6 classes.
+## This is a simple light weight typescript library that let you to remove your hardcodes dependencies from your ES6 classes. This allow you to manage both singleton and other dependency classes.
 
 ## Oldway
 
@@ -57,6 +57,8 @@ class Engine {
 ## Using bilstrap-iosjs
 
 ```ts
+import { Container } from 'bilstrap-iocjs';
+
 class Piston {
   constructor() {}
 
@@ -123,3 +125,25 @@ container.register('piston', Piston, [], true);
 ## Descorators
 
 On the way
+
+
+## Features
+
+**register(uniqueClassName, BaseClass, Dependencies, singletonOrNot): void**
+
+|          Prameter      |        Description                |
+|------------------------|-----------------------------------|
+| name : string          | unique name to identify the class |
+| definition: Class      | Class that you want to register   |
+| dependencies: string[] | string array of dependencies, these are unique names that you used to register the dependencies|
+| isSingleton: boolean   | default value is **false**.       |
+
+**get(name):an y**
+
+| Parameter    | Description |
+|--------------|-------------|
+| name: string | unique name of the dependency you need
+
+## Contribution
+
+Become a contributor to this project. Feel free to submit an issue or a pull request.
