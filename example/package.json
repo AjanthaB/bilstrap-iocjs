@@ -1,0 +1,16 @@
+{
+  "name": "bilstrap-iocjs-example",
+  "version": "0.0.1",
+  "description": "IoC container -test project",
+  "main": "index.js",
+  "scripts": {},
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjanthaB/bilstrap-iocjs.git"
+  },
+  "dependencies": {
+    "bilstrap-iocjs": "^1.0.2"
+  },
+  "devDependencies": {}
+}

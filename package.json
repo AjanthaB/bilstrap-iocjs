@@ -1,0 +1,51 @@
+{
+  "name": "bilstrap-iocjs",
+  "version": "1.0.3",
+  "description": "IoC container for typescript and javascript",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "npm run lint",
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "build": "tsc",
+    "postbuild": "babel src --out-dir lib --extensions \".ts, .tsx\" --source-maps inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjanthaB/bilstrap-iocjs.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Ajantha Bandara <ajantha.p.bandara@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AjanthaB/bilstrap-iocjs/issues"
+  },
+  "homepage": "https://github.com/AjanthaB/bilstrap-iocjs#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-typescript": "^7.0.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.2.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.4"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
