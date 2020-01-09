@@ -54,7 +54,7 @@ class Engine {
  }
 ```
 
-## Using bilstrap-iosjs
+## Using bilstrap-iocjs
 
 ```ts
 import { Container } from 'bilstrap-iocjs';
