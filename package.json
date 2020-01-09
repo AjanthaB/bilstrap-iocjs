@@ -1,6 +1,6 @@
 {
   "name": "bilstrap-iocjs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "IoC container for typescript and javascript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -47,5 +47,8 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
