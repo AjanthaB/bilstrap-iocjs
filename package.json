@@ -46,6 +46,6 @@
     "typescript": "^3.7.4"
   },
   "files": [
-    "lib/**/*"
+    "lib"
   ]
 }

@@ -10,7 +10,7 @@
     "url": "git+https://github.com/AjanthaB/bilstrap-iocjs.git"
   },
   "dependencies": {
-    "bilstrap-iocjs": "^1.0.2"
+    "bilstrap-iocjs": "^1.0.5"
   },
   "devDependencies": {}
 }

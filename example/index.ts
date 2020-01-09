@@ -4,7 +4,7 @@
  * @description - This is a IoC container for Typescipt
  */
 
- import { Container } from '../lib'
+ import { Container } from 'bilstrap-iocjs'
 
  export class Engine {
    constructor(private piston: Piston) {

@@ -5,7 +5,7 @@
  * @description - This is a IoC container for Typescipt
  */
 exports.__esModule = true;
-var lib_1 = require("../lib");
+var bilstrap_iocjs_1 = require("bilstrap-iocjs");
 var Engine = /** @class */ (function () {
     function Engine(piston) {
         this.piston = piston;
@@ -51,7 +51,7 @@ var Car = /** @class */ (function () {
     return Car;
 }());
 exports.Car = Car;
-var container = new lib_1.Container();
+var container = new bilstrap_iocjs_1.Container();
 container.register('piston', Piston, [], true);
 container.register('engine', Engine, ['piston']);
 container.register('car', Car, ['engine']);
