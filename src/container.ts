@@ -27,7 +27,8 @@ export class Container {
   public get(name: string | symbol): any {
     const service = this.serviceMap.get(name);
 
-    if (service && this.isClass(service.definition)) { // class
+    if (service && this.isClass(service.definition)) {
+      // class
       if (service.isSingleton) {
         let singletonInstance = this.singletonMap.get(service.name);
         if (!singletonInstance) {
@@ -47,7 +48,7 @@ export class Container {
     if (service.dependencies) {
       dependencies = service.dependencies.map((dep: any) => {
         return this.get(dep);
-      })
+      });
     }
     return dependencies;
   }
