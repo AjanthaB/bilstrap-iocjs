@@ -29,21 +29,20 @@
     "url": "https://github.com/AjanthaB/bilstrap-iocjs/issues"
   },
   "homepage": "https://github.com/AjanthaB/bilstrap-iocjs#readme",
-  "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/node": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-decorators": "^7.7.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-typescript": "^7.0.0",
-    "prettier": "^1.19.1",
-    "ts-jest": "^24.2.0",
-    "tslint": "^5.20.1",
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-decorators": "^7.17.9",
+    "@babel/plugin-proposal-object-rest-spread": "^7.17.3",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-typescript": "^7.16.7",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
+    "tslint": "~6.1.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.7.4"
+    "typescript": "^4.1.5"
   },
   "files": [
     "lib"
